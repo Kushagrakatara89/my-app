@@ -1,0 +1,20 @@
+/* Ensure no background color for carousel slides and all child elements */
+.carousel .slide,
+.carousel .slide *,
+.carousel .slide::before,
+.carousel .slide::after {
+  background: none !important;
+}
+
+/* Remove focus outline and any possible background color on hover and focus */
+.carousel .slide:hover,
+.carousel .slide:focus,
+.carousel .slide *:hover,
+.carousel .slide *:focus,
+.carousel .slide::before:hover,
+.carousel .slide::before:focus,
+.carousel .slide::after:hover,
+.carousel .slide::after:focus {
+  background: none !important;
+  outline: none !important;
+}
